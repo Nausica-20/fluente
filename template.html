@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Come imparare le lingue - Fluente</title>
+    <style>
+        /* CSS Base e Variabili */
+        :root {
+            --babbel-blue: #007DA3;
+            --cta-orange: #FF7A59;
+            --text-dark: #333333;
+            --bg-light: #F4F4F4;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Affiliate Disclosure */
+        .disclosure {
+            background-color: var(--bg-light);
+            color: #666;
+            text-align: center;
+            padding: 8px 15px;
+            font-size: 0.85rem;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Header e Navigazione */
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--babbel-blue);
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--babbel-blue);
+        }
+
+        /* Dropdown Altre Lingue */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Corpo del Testo */
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            color: var(--babbel-blue);
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        .hero-img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            background-color: #ddd;
+            /* Placeholder per l'immagine */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 0;
+            color: #777;
+        }
+
+        /* Box Promozionale Babbel */
+        .babbel-promo {
+            background-color: #E6F2F5;
+            border-left: 5px solid var(--babbel-blue);
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 4px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: var(--babbel-blue);
+            color: white;
+        }
+
+        /* Call To Action */
+        .cta-box {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+            border: 2px dashed #ccc;
+            border-radius: 8px;
+            margin: 40px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--cta-orange);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #e66a4d;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--text-dark);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: #bbb;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        .footer-social {
+            margin: 20px 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="disclosure">
+        <strong>Trasparenza:</strong> Questo sito è supportato dai lettori. Se acquisti un corso Babbel tramite i nostri link, potremmo ricevere una commissione senza costi aggiuntivi per te.
+    </div>
+
+    <header>
+        <a href="#" class="logo">Fluente</a>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Inglese</a></li>
+                <li><a href="#">Francese</a></li>
+                <li><a href="#">Spagnolo</a></li>
+                <li><a href="#">Tedesco</a></li>
+                <li><a href="#">Portoghese</a></li>
+                <li class="dropdown">
+                    <a href="#">Altre Lingue ▼</a>
+                    <div class="dropdown-content">
+                        <a href="#">Olandese</a>
+                        <a href="#">Svedese</a>
+                        <a href="#">Polacco</a>
+                    </div>
+                </li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h1>Come imparare una nuova lingua velocemente: La guida definitiva</h1>
+            
+            <div class="hero-img">
+                [Inserisci qui la tua immagine di copertina (es. 800x400px)]
+            </div>
+
+            <p>Imparare una nuova lingua non è solo un modo per arricchire il proprio curriculum, ma è una vera e propria finestra su nuove culture, amicizie e opportunità di viaggio. Tuttavia, il tempo è spesso il nostro più grande nemico.</p>
+            
+            <p>Se hai provato a memorizzare liste di vocaboli senza successo, è arrivato il momento di cambiare approccio.</p>
+
+            <div class="babbel-promo">
+                <h3>💡 Il Metodo Consigliato: Perché scegliere Babbel?</h3>
+                <p>A differenza dei metodi scolastici tradizionali, <strong>Babbel</strong> si concentra sulla conversazione reale e pratica fin dal primo giorno. Le lezioni durano solo 15 minuti e sono create da esperti di linguistica, permettendoti di incastrare lo studio anche nelle giornate più impegnative.</p>
+            </div>
+
+            <h2>Confronto: App vs Metodo Tradizionale</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Caratteristica</th>
+                        <th>Metodo Tradizionale</th>
+                        <th>Metodo Babbel</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Impegno richiesto</strong></td>
+                        <td>1-2 ore di fila</td>
+                        <td>15 minuti al giorno</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Focus principale</strong></td>
+                        <td>Grammatica teorica e liste</td>
+                        <td>Conversazione pratica</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Flessibilità</strong></td>
+                        <td>Orari fissi</td>
+                        <td>Ovunque tu sia, da smartphone</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="cta-box">
+                <h2>🔥 Pronto a diventare Fluente?</h2>
+                <p>Non rimandare a domani quello che puoi imparare oggi. Unisciti a milioni di persone che stanno già parlando una nuova lingua.</p>
+                <a href="TUO_LINK_AFFILIATO_BABBEL" class="btn" target="_blank" rel="nofollow">SCOPRI I CORSI BABBEL ORA</a>
+                <p><small><em>Inizia oggi e scopri le offerte attive sui piani di abbonamento.</em></small></p>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p><strong>Fluente</strong> - Il tuo compagno nel viaggio linguistico.</p>
+        
+        <div class="footer-social">
+            <a href="LINK_PINTEREST" target="_blank">📌 Seguimi su Pinterest</a>
+        </div>
+
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Cookie Policy</a> | 
+            <a href="#">Contatti</a>
+        </div>
+        
+        <p style="margin-top: 20px; font-size: 0.9rem; color: #888;">
+            &copy; 2026 Fluente. Tutti i diritti riservati.
+        </p>
+    </footer>
+
+</body>
+</html>
